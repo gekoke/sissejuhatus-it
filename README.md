@@ -1,6 +1,6 @@
 # Cat fetcher!
  _____________
-< I like cats >
+\< I like cats >\
  -------------
         \   ^__^
          \  (oo)\_______
