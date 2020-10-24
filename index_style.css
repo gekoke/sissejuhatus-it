@@ -3,6 +3,7 @@
 :root {
     --header-color: rgb(40, 40, 60);
     --text-color: rgb(60, 60, 60);
+    --light-text-color: rgb(245, 245, 255);
     --accent-color: rgba(120, 120, 180, 0.5);
 }
 
@@ -25,18 +26,23 @@ body {
 #menu {
     text-align: left;
     padding-left: 12px;
+    padding-right: 12px;
 
     display: flex;
     align-items: center;
-    padding-left: 32px;
+    justify-content: space-between;
 
     height: 32px;
     background-color: var(--accent-color);
-    border-radius: 0 0 20px 20px;
+}
+
+.menu-title {
+    color: var(--light-text-color);
+    align-self: center;
 }
 
 a {
-    color: rgb(245, 245, 255);
+    color: var(--light-text-color);
     font-size: 20px;
     padding-right: 20px;
 }
@@ -46,12 +52,13 @@ a {
     flex-direction: column;
     align-self: center;
     align-items: center;
-
-    width: 40%;
+    margin: 8px;
+    padding: 8px;
 }
 
 h1 {
     color: var(--header-color);
+    text-align: center;
 }
 
 h2 {
@@ -69,11 +76,6 @@ tr:first-child {
     color: var(--header-color);
 }
 
-#content-container {
-    display: flex;
-    flex-direction: space-around;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -83,6 +85,7 @@ tr:first-child {
 
 #cat-container {
     height: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -110,4 +113,8 @@ button:hover {
     background-color: var(--accent-color);
     cursor: pointer;
     transition: 0.4s ease all;
+}
+
+p {
+    max-width: 1200px;
 }
